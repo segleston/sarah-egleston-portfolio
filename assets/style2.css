@@ -1,0 +1,50 @@
+@media screen and (max-width: 600px) {
+    .column {
+    width: 100%;
+    }
+}
+
+:root {
+    --font-color: RGB(255, 29, 163);
+}
+
+* {
+    background-color: RGB(11, 61, 64);
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 4px;
+}
+
+.header h1 {
+    display: block;
+    font-size: 40px;
+    color: var(--font-color);
+}
+
+.nav-links {
+    display:flex;
+    gap: 2rem;
+    font-size: 25px;
+    color: var(--font-color);
+}
+
+.nav-links li {
+    padding-right: 10px;
+    list-style-type: none; 
+}
+
+a {
+    color: RGB(255, 29, 163)
+}
+
+a:hover {
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+

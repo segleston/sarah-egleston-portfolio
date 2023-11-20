@@ -2,59 +2,87 @@
 <html lang="en-gb">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sarah Egleston // Web Developer</title>
+<!-- <link rel="resetcss" href="./assets/reset.css" /> -->
+<link rel="stylesheet" href="./assets/style2.css" />
 </head>
 
 <body>
-  <!-- main logo / nav -->
-  <header class="header flex-container">
-    <h1>Lernantino</h1>
+
+<!-- main logo / nav -->
+
+<header class="header">
+    <div>
+        <h1>Sarah Egleston // Portfolio </h1>
+    </div>
     <nav>
-        <ul class="flex-container nav-links">
-            <li><a>About me</a></li>
-            <li><a>Work</a></li>
-            <li><a>Contact me</a></li>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
-  </header>
+</header>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
+<!-- hero banner -->
+<section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+    <h2>Welcome to my portfolio!</h2>
     </div>
-  </section>
+</section>
 
-  <main class="page-wrapper">
+<!-- Main section of text -->
+<main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <div class="section-heading">
-        <h2>About Me</h2>
-      </div>
-      <div class="section-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, placeat molestiae porro ex laborum vitae officia. Quo incidunt non praesentium.</div>
+        <div class="section-heading">
+            <div>
+            <div class="profile-photo">
+            <img src="./assets/images/IMG_5415.JPG" alt="photo of sarah egleston">
+            </div>
+            <div class="about-me">
+                <h2>About Me</h2>
+            </div>
+            </div>
+        </div>
+            <p class="section-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, placeat molestiae porro ex laborum vitae officia. Quo incidunt non praesentium.
+            </p>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <div class="section-heading">
-          <h2>Work</h2>
-      </div>
-
-      <div class="section-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam possimus eligendi nesciunt quos hic. Suscipit tenetur quae nisi accusamus quam.</div>
+        <div class="section-heading">
+            <h2>Work</h2>
+        </div>
+        <section class="section-body" id="work-grid">
+            <div id="horiseon" class="work-grid-area">
+                <div class="heading">Horiseon Code Refactor</div>
+            </div>
+            <div id="placeholder" class="work-grid-area">
+                <div class="heading">Placeholder</div>
+            </div>
+            <div id="placeholder2" class="work-grid-area">
+                <div class="heading">Placeholder2</div>
+            </div>
+            <div id="placeholder3" class="work-grid-area">
+                <div class="heading">Placeholder3</div>
+            </div>
+        </section>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <div class="section-heading">
-          <h2>Contact Me</h2>
-      </div>
-      <div class="section-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam porro, quia facilis totam illo alias harum ipsam eos delectus?</div>
+    <section class="page-section" id="contact">
+        <div class="section-heading">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="section-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam porro, quia facilis totam illo alias harum ipsam eos delectus?
+        </div>
     </section>
-  </main>
+</main>
 </body>
 
 </html>
