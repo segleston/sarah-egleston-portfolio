@@ -81,7 +81,7 @@ body {
     text-shadow: 0 0 3px #00ff00, 0 0 5px #005804;
 }
 
-.page-section {
+ {
     display: flex;
     flex-direction: row;
     align-items: center;
