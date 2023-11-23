@@ -23,13 +23,14 @@ Please see screenshots of page:
 ## Credits
 
 
-- https://www.pexels.com
-- https://www.w3schools.com/
-- https://courses.wesbos.com/
+- grid photos and hero banner photo: https://www.pexels.com
+- CSS tips: https://www.w3schools.com/
+- flexbox learning: https://courses.wesbos.com/
 - Linkedin logo: https://brand.linkedin.com/downloads
-- https://css-tricks.com/snippets/jquery/smooth-scrolling/
-- https://github.com/logos
-- https://css-tricks.com/snippets/css/complete-guide-grid/
+- Smooth scrolling: https://css-tricks.com/snippets/jquery/smooth-scrolling/
+- Github logo: https://github.com/logos
+- Grid learning: https://css-tricks.com/snippets/css/complete-guide-grid/
+- Reset CSS: https://github.com/necolas/
 
 
 
