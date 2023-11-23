@@ -151,6 +151,10 @@ section {
 /* futher styling affecting class mentioned */
 .about-section {
     height: 230px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
@@ -252,7 +256,7 @@ section {
 /* css to align all items within contact section */
 .github-link .grid-content,
 .linkedin-link .grid-content, 
-#email {
+.email-link .grid-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,7 +267,9 @@ section {
     grid-area: github;
 }
 /* height and width css for images */
-#github div img, #linkedin div img  {
+#github div img, 
+#linkedin div img, 
+#email div img  {
     height: 60px;
     width: 60px;
 }
@@ -276,11 +282,6 @@ section {
     grid-area: email;
 }
 
-/* font size for h2 element within class contact-grid-area */
-.contact-grid-area h3,
-.contact-grid-area a {
-    font-size: 22px;
-}
 /* css for footer containing text and link to github */
 .footer {
     display: flex;
@@ -301,14 +302,57 @@ a {
     font-size: 18px;
 }
 
+/* Media screen to adjust flex directions and heights of sections and borders when the screen goes below 680px wide */
+@media screen and (max-width: 680px) {
+    .nav-links {
+    font-size: 18px;
+}
+.header {
+    flex-direction: column;
+    align-items: center;
+}
+.page-wrapper {
+    flex-direction: column;
+}
+.page-section {
+    flex-direction: column;
+}
+#horiseon div{
+    background-size: auto;
+}
+#work-grid,
+#about
+{
+    border-left: 0px solid var(--font-color);
+    border-bottom: 2px solid var(--font-color);
+}
+.section-body 
+{
+    padding-bottom: 10px;
+    border-left: 0px;
+    font-size: 18px;
+}
+.about-section {
+    height: 300px;
+    flex-direction: column;
+}
+}
 
-@media screen and (max-width: 600px) {
-    .column {
-    width: 100%;
+/* as above but under 590px */
+@media screen and (max-width: 590px) {
+    .section-body p {
+        padding-top: 5px;
+        height: 120px;
     }
-    .header-text {
-        font-size: 16px;
+    .section-heading h2 {
+        padding-bottom: 30px;
     }
 }
 
-
+@media screen and (max-width: 549px) {
+    .section-body p {
+        height: 140px;
+    }
+    .header-box div h1{
+        text-align: center;
+    }

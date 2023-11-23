@@ -23,7 +23,7 @@ Please see screenshots of page:
 ## Credits
 
 
-- pexels.com
+- https://www.pexels.com
 - https://www.w3schools.com/
 - https://courses.wesbos.com/
 - Linkedin logo: https://brand.linkedin.com/downloads
