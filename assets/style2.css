@@ -1,22 +1,25 @@
+
+/* Variables for text and colours */
 :root {
     --font-color: #18191a;
     --background-color:#bfbfbf;
     --off-white: white;
 }
-
+/* CSS for whole page */
 * {
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
-
+/* margin and styling for the body section */
 body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
 }
-
+/* flex properties and styling for header */
 .header {
     display: flex;
     justify-content: space-around;
@@ -24,18 +27,18 @@ body {
     background-color: var(--background-color);
     padding: 10px 10px 20px 0px;
 }
-
+/* CSS for header text class */
 .header-text {
     display: inline-block;
-    font-size: 20px;
+    font-size: 24px;
     color: var(--font-color);
     padding-left: 5px;
 }
-
+/* styling for nav */
 .nav-links {
     display:flex;
     gap: 2rem;
-    font-size: 18px;
+    font-size: 22px;
     color: var(--font-color);
     padding: 15px;
     align-items: center;
@@ -43,28 +46,24 @@ body {
     text-transform: capitalize;
     font-weight: bold;
 }
-
+/* CSS for list within nav-links class */
 .nav-links li {
     padding-right: 10px;
     list-style-type: none; 
 }
-
-a {
+/* color for anchor tag */
+.nav-links a {
     color: var(--font-color);
+    transition: transform 0.3s ease;
 }
-
+/* styling for when hovering over anchor tag */
 a:hover {
     text-decoration:none; 
     cursor:pointer;  
-    font-size: 22px;
-    transform: scale(1.2);
-    scroll-behavior: smooth;
+    font-size: 23px;
+    transform: scale(1.1);
 }
-
-section {
-    display: block;
-}
-
+/* hero banner css */
 .hero-banner {
     position: relative;
     display: flex;
@@ -72,69 +71,85 @@ section {
     width: 100%;
     height: 200px; 
 }
-
+/* styling for img within hero banner */
 .hero-banner img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     /* border-top: 20px solid var(--background-color); */
 }
-
+/* styling for html within hero-text class */
 .hero-text {
     position: absolute;
     bottom: 10px; 
     right: 10px; 
     background-color: rgba(0,0,0,0.7);
-    font-size: 20px;
+    font-size: 22px;
     color: var(--background-color);
     padding: 5px;
 }
-
+/* CSS for h2 element within hero-banner class */
 .hero-banner h2 {
     justify-content: flex-end;
     align-items: flex-end;
 }
-
+/* futher styling affecting class mentioned */
 .page-wrapper {
     background-color: var(--background-color);
 }
 
+/* padding for all sections within main area of page */
+#work, #about, #contact{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* css for section area */
+section {
+    display: block;
+}
+
+/* futher styling affecting class mentioned */
 .page-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:space-around;
-    /* border-top: 20px solid var(--background-color); */
-    /* border-bottom: 20px solid var(--background-color); */
     height: auto;
 }
 
+/* futher styling affecting class mentioned */
 .section-heading {
     flex: 1;
+    font-size: 22;
     text-align: center;
     color: var(--font-color);
-    /* border-top: 20px solid var(--background-color);
-    border-bottom: 20px solid var(--background-color); */
 }
 
-.section-body {
-    flex: 3;
-    color: var(--font-color);
-    padding-left: 10px;
-    padding-right: 5px;
-    border-left: 5px solid var(--font-color);
-    /* border-top: 20px solid var(--background-color);
-    border-bottom: 20px solid var(--background-color); */
-}
-
-.about-section {
-    height: 230px;
-}
-
+/* styling for photo */
 .profile-photo {
     padding: 3px;
 }
 
+/* futher styling affecting class mentioned */
+.section-body {
+    display: flex;
+    flex: 3;
+    align-items: center;
+    font-size: 20px;
+    color: var(--font-color);
+    padding-left: 10px;
+    padding-right: 5px;
+    border-left: 5px solid var(--font-color);
+}
+
+/* futher styling affecting class mentioned */
+.about-section {
+    height: 230px;
+}
+
+
+/* work area grid section CSS */
 #work-grid {
     display: grid;
     width: 100%;
@@ -146,23 +161,23 @@ section {
     "horiseon horiseon"
     "placeholder placeholder3"
     "placeholder2 placeholder3";
-    grid-column-gap: 20px; 
-    grid-row-gap: 20px;
+    grid-column-gap: 15px; 
+    grid-row-gap: 15px;
 }
-
+/* CSS for horiseon id */
 #horiseon {
     grid-area: horiseon;
 }
-
+/* css for div within id of horiseon */
 #horiseon div {
     background-image: url(./images/Screenshot\ 2023-11-20\ at\ 21.08.48\ copy.png);
     height: 270px;
 }
-
+/* CSS for placeholder id */
 #placeholder {
     grid-area: placeholder;
 }
-
+/* css for div within id placeholder */
 #placeholder div {
     background-image: url(./images/pexels-david-selbert-6468065.jpg);
     height: 120px;
@@ -183,9 +198,9 @@ section {
 
 #placeholder3 div {
     background-image: url(./images/pexels-dids-4091235.jpg);
-    height: 240px;
+    height: 255px;
 }
-
+/* css for each specific grid area */
 .work-grid-area {
     background-position: center;
     background-size: cover;
@@ -196,41 +211,73 @@ section {
     align-content: end;
 }
 
-#work   {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#about {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#contact {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-
-.heading h2 {
+/* css for h2 element within heading class */
+.heading h3 {
     background-color: rgba(0,0,0,0.7);
     padding: 15px;
     height: 25px;
     color: var(--off-white);
-    font-size: 18px;
+    font-size: 20px;
     align-content: center;
     border-bottom: 5px solid var(--font-color);
 }
-
+/* css for grid link and to enlarge text when mouse hovers over link */
 .grid-link {
     transition: transform 0.3s ease;
 }
 
 .grid-link:hover {
-    transform: scale(1.2); /* Enlarge the link by 20% when hovered */
+    transform: scale(1.05); 
+}
+/* grid holding contact information css, along bottom of page */
+#contact-grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 40px;
+    grid-template-areas: 
+    "github linkedin email phone";
+    grid-column-gap: 15px; 
+    grid-row-gap: 15px;
+}
+/* css to align all items within contact section */
+.github-link .grid-content,
+.linkedin-link .grid-content,
+#phone, #email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+/* css to show what area of html is supposed to be within grid */
+#github {
+    grid-area: github;
+}
+/* height and width css for images */
+#github div img, #linkedin div img  {
+    height: 40px;
+    width: 40px;
 }
 
+#linkedin {
+    grid-area: linkedin;
+}
+
+#email {
+    grid-area: email;
+}
+
+#phone {
+    grid-area: phone;
+}
+/* font size for h2 element within class contact-grid-area */
+.contact-grid-area h3 {
+    font-size: 20px;
+}
+/* css for footer containing text and link to github */
 .footer {
     display: flex;
     justify-content: center;
@@ -238,12 +285,11 @@ section {
     background: var(--background-color);
     height: 100px;
     border-top: 5px solid var(--font-color);
+    text-decoration: underline;
 }
 
-.footer a {
-    padding: 20px 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+.footer h4 {
+    font-size: 18px;
 }
 
 @media screen and (max-width: 600px) {
