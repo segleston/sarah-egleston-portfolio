@@ -25,7 +25,8 @@ body {
     justify-content: space-around;
     align-items: baseline;
     background-color: var(--background-color);
-    padding: 10px 10px 20px 0px;
+    padding: 10px 10px 10px 0px;
+    border-bottom: green solid 3px;
 }
 /* CSS for header text class */
 .header-text {
@@ -34,6 +35,8 @@ body {
     color: var(--font-color);
     padding-left: 5px;
 }
+
+
 /* styling for nav */
 .nav-links {
     display:flex;
@@ -96,6 +99,7 @@ a:hover {
 /* futher styling affecting class mentioned */
 .page-wrapper {
     background-color: var(--background-color);
+    border-top: green solid 4px;
 }
 
 /* padding for all sections within main area of page */
@@ -155,7 +159,7 @@ section {
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 120px 120px 120px;
+    grid-template-rows: 200px 150px 150px 150px;
     grid-template-areas: 
     "horiseon horiseon"
     "horiseon horiseon"
@@ -171,7 +175,7 @@ section {
 /* css for div within id of horiseon */
 #horiseon div {
     background-image: url(./images/Screenshot\ 2023-11-20\ at\ 21.08.48\ copy.png);
-    height: 270px;
+    height: 350px;
 }
 /* CSS for placeholder id */
 #placeholder {
@@ -180,7 +184,7 @@ section {
 /* css for div within id placeholder */
 #placeholder div {
     background-image: url(./images/pexels-david-selbert-6468065.jpg);
-    height: 120px;
+    height: 150px;
 }
 
 #placeholder2 {
@@ -189,7 +193,7 @@ section {
 
 #placeholder2 div {
     background-image: url(./images/pexels-nothing-ahead-6051044.jpg);
-    height: 120px;
+    height: 150px;
 }
 
 #placeholder3 {
@@ -198,7 +202,7 @@ section {
 
 #placeholder3 div {
     background-image: url(./images/pexels-dids-4091235.jpg);
-    height: 255px;
+    height: 315px;
 }
 /* css for each specific grid area */
 .work-grid-area {
@@ -234,19 +238,20 @@ section {
     display: grid;
     width: 100%;
     height: 100%;
-    justify-content: center;
+    margin: 5px;
+    justify-content: space-evenly;
     align-items: center;
-    grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 40px;
     grid-template-areas: 
-    "github linkedin email phone";
+    "github linkedin email";
     grid-column-gap: 15px; 
     grid-row-gap: 15px;
 }
 /* css to align all items within contact section */
 .github-link .grid-content,
-.linkedin-link .grid-content,
-#phone, #email {
+.linkedin-link .grid-content, 
+#email {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,8 +263,8 @@ section {
 }
 /* height and width css for images */
 #github div img, #linkedin div img  {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
 }
 
 #linkedin {
@@ -270,12 +275,10 @@ section {
     grid-area: email;
 }
 
-#phone {
-    grid-area: phone;
-}
 /* font size for h2 element within class contact-grid-area */
-.contact-grid-area h3 {
-    font-size: 20px;
+.contact-grid-area h3,
+.contact-grid-area a {
+    font-size: 22px;
 }
 /* css for footer containing text and link to github */
 .footer {
@@ -284,13 +287,19 @@ section {
     align-items: center;
     background: var(--background-color);
     height: 100px;
-    border-top: 5px solid var(--font-color);
-    text-decoration: underline;
+    border-top: 4px solid green;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bold;
 }
 
 .footer h4 {
     font-size: 18px;
 }
+
 
 @media screen and (max-width: 600px) {
     .column {
