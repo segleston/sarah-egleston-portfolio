@@ -14,9 +14,9 @@ Live link:
 There is a header and navigation to let the user know who the portfolio belongs to, and links to each section; About me, Work and a section for users to be able to contact me. Further down the page, there are sections dedicated to the above topics and links to examples of my previous projects. 
 
 Please see screenshots of page:
-![alt text]()
-![alt text]()
-![alt text]()
+![alt text](./assets/images/Screenshot%202023-11-23%20at%2021.46.04.png)
+![alt text](./assets/images/Screenshot%202023-11-23%20at%2021.46.22.png)
+![alt text](./assets/images/Screenshot%202023-11-23%20at%2021.46.34.png)
 
 
 
