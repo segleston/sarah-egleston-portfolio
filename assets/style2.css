@@ -161,7 +161,7 @@ section {
 /* work area grid section CSS */
 #work-grid {
     display: grid;
-    width: 100%;
+    width: 90%;
     height: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 150px 150px 150px;
@@ -180,6 +180,7 @@ section {
 /* css for div within id of horiseon */
 #horiseon div {
     background-image: url(./images/Screenshot\ 2023-11-20\ at\ 21.08.48\ copy.png);
+    width: auto;
     height: 350px;
 }
 /* CSS for placeholder id */
@@ -301,6 +302,13 @@ a {
 .footer h4 {
     font-size: 18px;
 }
+@media screen and (max-width: 990px) {
+    #horiseon div {
+        width: auto;
+        background-size:contain;
+    }   
+}
+
 
 /* Media screen to adjust flex directions and heights of sections and borders when the screen goes below 680px wide */
 @media screen and (max-width: 680px) {
@@ -317,9 +325,6 @@ a {
 .page-section {
     flex-direction: column;
 }
-#horiseon div{
-    background-size: auto;
-}
 #work-grid,
 #about
 {
@@ -335,7 +340,7 @@ a {
 .about-section {
     height: 300px;
     flex-direction: column;
-}
+}  
 }
 
 /* as above but under 590px */
@@ -356,3 +361,4 @@ a {
     .header-box div h1{
         text-align: center;
     }
+}
