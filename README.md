@@ -17,8 +17,6 @@ Please see screenshots of page:
 ![alt text](./assets/images/screencapture-127-0-0-1-5500-index-html-2023-11-26-15_48_38.png)
 
 
-
-
 ## Credits
 
 
